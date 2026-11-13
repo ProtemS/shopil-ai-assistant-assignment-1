@@ -1,0 +1,12 @@
+{
+  "observed_at": "2026-11-13T11:33:00.133502+00:00",
+  "database": "live_verified.sqlite",
+  "wait_s": 2,
+  "checkpoint_before": 982,
+  "checkpoint_after": 989,
+  "accepted_before": 860,
+  "accepted_after": 866,
+  "pass": true,
+  "scope": "Actual running isolated preview; no injected events or model decisions.",
+  "storage_note": "An earlier instance stopped on disk I/O error. Underlying cause not established. Supervisor retry and visible-stop paths are separately tested with injected faults."
+}

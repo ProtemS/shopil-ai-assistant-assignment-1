@@ -1,0 +1,8 @@
+Exception in thread Thread-1 (producer):
+object address  : 00000294BF973B50
+object refcount : 4
+object type     : 00000294A0EFB770
+object type name: ExceptionGroup
+object repr     : ExceptionGroup('unhandled errors in a TaskGroup', [OperationalError('disk I/O error')])
+lost sys.stderr
+  + Exception Group Traceback (most recent call last):

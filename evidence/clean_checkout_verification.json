@@ -1,12 +1,12 @@
 {
-  "clean_checkout_code_commit": "0ee07c2e3b5f971d56fb7d855e13356efee7901d",
+  "clean_checkout_code_commit": "e0c1fd46feb5f4aba108ac13328e723b7fa3a9fe",
   "environment": "Fresh private GitHub clone; shared verified Python virtual environment",
   "batch_preparation": "PASS: fresh load, reload, dbt build, 14 course review checks",
   "batch_report_identical": true,
   "stream_snapshots_identical": true,
   "tests": {
-    "working_copy": "50 passed; 72 subtests passed",
-    "fresh_clone": "50 passed; 72 subtests passed"
+    "working_copy": "53 passed; 72 subtests passed",
+    "fresh_clone": "53 passed; 72 subtests passed"
   },
   "real_model_answers": "3 approved and manually reviewed; first has a real rejection/correction",
   "dbt": "32 passed, 1 expected raw-order/customer relationship warning, 0 errors",

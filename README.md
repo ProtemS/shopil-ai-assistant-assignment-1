@@ -48,6 +48,8 @@ Open http://127.0.0.1:7860. The synthetic producer runs throughout the session t
 
 The runtime supervisor displays running/recovering/stopped status. A SQLite operational error triggers up to three retries, reopening the database and recreating the deterministic source from its durable next offset. Persistent or non-storage errors stop visibly rather than leaving stale counters labeled active. Monitoring uses a read-only SQLite transaction. This was added after an observed disk I/O failure; the underlying storage cause was not established. Tests inject recoverable and persistent errors. For an isolated second preview use `python app.py --port 7861 --stream-db live_verified.sqlite`; never share one live database between two producers.
 
+While an instance is running, `python verify_runtime.py --stream-db live.sqlite` checks that its checkpoint advances and records the two actual read-only snapshots in `evidence/runtime_health.json`. An idle or stopped producer fails this check rather than treating old counters as live evidence.
+
 Try asking about paid historical revenue, follow up about its period, then ask for net profit (expenses are absent). Select a product to include its clean review texts. The system supports numeric and product questions over the fixed allowlisted evidence; it does not execute model-generated SQL.
 
 ## Evidence and provenance
