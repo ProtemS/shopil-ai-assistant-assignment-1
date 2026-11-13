@@ -1,0 +1,20 @@
+version: 2
+models:
+  - name: stg_reviews
+    columns:
+      - name: review_id
+        tests: [unique, not_null]
+      - name: rating
+        tests:
+          - accepted_values:
+              values: [1,2,3,4,5]
+              quote: false
+      - name: product_id
+        tests:
+          - relationships:
+              to: ref('stg_products')
+              field: product_id
+  - name: mart_product_reviews
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
