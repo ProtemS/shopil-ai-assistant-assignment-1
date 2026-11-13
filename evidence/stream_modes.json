@@ -1,0 +1,448 @@
+{
+  "live": {
+    "produced": 17,
+    "consumed": 17,
+    "queue_maxsize": 3,
+    "max_queue_depth": 1,
+    "backpressure_waits": 0,
+    "producer_wait_s": 0.0001,
+    "stop_reason": "end_of_input",
+    "event_time_clock": "fixture",
+    "snapshot": {
+      "checkpoint": 16,
+      "next_offset": 17,
+      "max_event_time_ms": 1793527395000,
+      "max_event_time": "2026-11-01T10:03:15.000+00:00",
+      "watermark_ms": 1793527395000,
+      "watermark": "2026-11-01T10:03:15.000+00:00",
+      "finalized": true,
+      "config": {
+        "window_seconds": 60,
+        "grace_seconds": 10,
+        "out_of_order_seconds": 0,
+        "alert_threshold": 3
+      },
+      "stats": {
+        "received": 17,
+        "accepted": 12,
+        "accepted_orders": 7,
+        "accepted_reviews": 5,
+        "duplicates": 2,
+        "late": 2,
+        "invalid": 1,
+        "revenue_windows_emitted": 4,
+        "review_windows_emitted": 2,
+        "alerts_emitted": 1
+      },
+      "open_windows": [],
+      "open_review_windows": [],
+      "revenue_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "orders": 2,
+          "revenue_cents": 2500,
+          "emitted_at_watermark_ms": 1793527275000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527260000,
+          "window_end_ms": 1793527320000,
+          "orders": 2,
+          "revenue_cents": 5000,
+          "emitted_at_watermark_ms": 1793527335000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "orders": 2,
+          "revenue_cents": 3500,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527380000,
+          "window_end_ms": 1793527440000,
+          "orders": 1,
+          "revenue_cents": 1200,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:03:00.000+00:00",
+          "window_end": "2026-11-01T10:04:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "review_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "product_id": 5,
+          "reviews": 4,
+          "negative_reviews": 4,
+          "emitted_at_watermark_ms": 1793527275000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "product_id": 5,
+          "reviews": 1,
+          "negative_reviews": 0,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "alerts": [
+        {
+          "product_id": 5,
+          "window_start_ms": 1793527200000,
+          "negative_reviews": 3,
+          "trigger_event_id": "review-3",
+          "emitted_at_watermark_ms": 1793527265000,
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00"
+        }
+      ],
+      "late_events": [
+        {
+          "event_id": "order-late",
+          "source_offset": 9,
+          "kind": "order",
+          "event_time_ms": 1793527225000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527275000,
+          "amount_cents": 500,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:25.000+00:00",
+          "watermark": "2026-11-01T10:01:15.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "amount_cents": 500,
+            "event_id": "order-late",
+            "event_time": "2026-11-01T10:00:25+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        },
+        {
+          "event_id": "order-boundary",
+          "source_offset": 15,
+          "kind": "order",
+          "event_time_ms": 1793527260000,
+          "window_start_ms": 1793527260000,
+          "watermark_ms": 1793527335000,
+          "amount_cents": 800,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "event_time": "2026-11-01T10:01:00.000+00:00",
+          "watermark": "2026-11-01T10:02:15.000+00:00",
+          "window_end_ms": 1793527320000,
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "payload": {
+            "amount_cents": 800,
+            "event_id": "order-boundary",
+            "event_time": "2026-11-01T10:01:00+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "dead_letters": [
+        {
+          "source_offset": 11,
+          "reason": "amount_cents must be an integer >= 0",
+          "payload": {
+            "amount_cents": 19.9,
+            "event_id": "bad-money",
+            "event_time": "2026-11-01T10:02:10+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "totals": {
+        "orders": 7,
+        "revenue_cents": 12200,
+        "reviews": 5,
+        "negative_reviews": 4,
+        "late_orders": 2,
+        "late_order_cents": 1300,
+        "late_reviews": 0
+      }
+    },
+    "elapsed_s": 0.0186
+  },
+  "microbatch": {
+    "produced": 17,
+    "consumed": 17,
+    "batches": 4,
+    "queue_maxsize": 3,
+    "max_queue_depth": 1,
+    "max_batch_size": 5,
+    "max_wait_s": 0.05,
+    "max_buffered_records": 5,
+    "backpressure_waits": 0,
+    "producer_wait_s": 4.1e-05,
+    "batch_sizes": [
+      5,
+      5,
+      5,
+      2
+    ],
+    "batch_wait_s": [
+      0.009034,
+      8.7e-05,
+      7.3e-05,
+      4.2e-05
+    ],
+    "batch_details": [
+      {
+        "index": 1,
+        "size": 5,
+        "flush_reason": "max_size",
+        "collection_wait_s": 0.009034,
+        "processing_s": 0.001936,
+        "first_offset": 0,
+        "last_offset": 4
+      },
+      {
+        "index": 2,
+        "size": 5,
+        "flush_reason": "max_size",
+        "collection_wait_s": 8.7e-05,
+        "processing_s": 0.002108,
+        "first_offset": 5,
+        "last_offset": 9
+      },
+      {
+        "index": 3,
+        "size": 5,
+        "flush_reason": "max_size",
+        "collection_wait_s": 7.3e-05,
+        "processing_s": 0.001809,
+        "first_offset": 10,
+        "last_offset": 14
+      },
+      {
+        "index": 4,
+        "size": 2,
+        "flush_reason": "final_drain",
+        "collection_wait_s": 4.2e-05,
+        "processing_s": 0.000737,
+        "first_offset": 15,
+        "last_offset": 16
+      }
+    ],
+    "flush_counts": {
+      "max_size": 3,
+      "max_wait": 0,
+      "final_drain": 1
+    },
+    "final_partial_batch_size": 2,
+    "stop_reason": "end_of_input",
+    "event_time_clock": "fixture",
+    "snapshot": {
+      "checkpoint": 16,
+      "next_offset": 17,
+      "max_event_time_ms": 1793527395000,
+      "max_event_time": "2026-11-01T10:03:15.000+00:00",
+      "watermark_ms": 1793527395000,
+      "watermark": "2026-11-01T10:03:15.000+00:00",
+      "finalized": true,
+      "config": {
+        "window_seconds": 60,
+        "grace_seconds": 10,
+        "out_of_order_seconds": 0,
+        "alert_threshold": 3
+      },
+      "stats": {
+        "received": 17,
+        "accepted": 12,
+        "accepted_orders": 7,
+        "accepted_reviews": 5,
+        "duplicates": 2,
+        "late": 2,
+        "invalid": 1,
+        "revenue_windows_emitted": 4,
+        "review_windows_emitted": 2,
+        "alerts_emitted": 1
+      },
+      "open_windows": [],
+      "open_review_windows": [],
+      "revenue_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "orders": 2,
+          "revenue_cents": 2500,
+          "emitted_at_watermark_ms": 1793527275000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527260000,
+          "window_end_ms": 1793527320000,
+          "orders": 2,
+          "revenue_cents": 5000,
+          "emitted_at_watermark_ms": 1793527335000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "orders": 2,
+          "revenue_cents": 3500,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527380000,
+          "window_end_ms": 1793527440000,
+          "orders": 1,
+          "revenue_cents": 1200,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:03:00.000+00:00",
+          "window_end": "2026-11-01T10:04:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "review_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "product_id": 5,
+          "reviews": 4,
+          "negative_reviews": 4,
+          "emitted_at_watermark_ms": 1793527275000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "product_id": 5,
+          "reviews": 1,
+          "negative_reviews": 0,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "alerts": [
+        {
+          "product_id": 5,
+          "window_start_ms": 1793527200000,
+          "negative_reviews": 3,
+          "trigger_event_id": "review-3",
+          "emitted_at_watermark_ms": 1793527265000,
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00"
+        }
+      ],
+      "late_events": [
+        {
+          "event_id": "order-late",
+          "source_offset": 9,
+          "kind": "order",
+          "event_time_ms": 1793527225000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527275000,
+          "amount_cents": 500,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:25.000+00:00",
+          "watermark": "2026-11-01T10:01:15.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "amount_cents": 500,
+            "event_id": "order-late",
+            "event_time": "2026-11-01T10:00:25+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        },
+        {
+          "event_id": "order-boundary",
+          "source_offset": 15,
+          "kind": "order",
+          "event_time_ms": 1793527260000,
+          "window_start_ms": 1793527260000,
+          "watermark_ms": 1793527335000,
+          "amount_cents": 800,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "event_time": "2026-11-01T10:01:00.000+00:00",
+          "watermark": "2026-11-01T10:02:15.000+00:00",
+          "window_end_ms": 1793527320000,
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "payload": {
+            "amount_cents": 800,
+            "event_id": "order-boundary",
+            "event_time": "2026-11-01T10:01:00+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "dead_letters": [
+        {
+          "source_offset": 11,
+          "reason": "amount_cents must be an integer >= 0",
+          "payload": {
+            "amount_cents": 19.9,
+            "event_id": "bad-money",
+            "event_time": "2026-11-01T10:02:10+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "totals": {
+        "orders": 7,
+        "revenue_cents": 12200,
+        "reviews": 5,
+        "negative_reviews": 4,
+        "late_orders": 2,
+        "late_order_cents": 1300,
+        "late_reviews": 0
+      }
+    },
+    "elapsed_s": 0.017282
+  }
+}

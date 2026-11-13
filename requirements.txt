@@ -1,0 +1,8 @@
+dlt[duckdb]>=1.20,<2
+duckdb==1.4.4
+dbt-duckdb>=1.9,<2
+gradio>=6.32,<7
+pydantic>=2,<3
+python-dotenv>=1,<2
+requests>=2,<3
+pytest>=8,<10

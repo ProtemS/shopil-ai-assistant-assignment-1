@@ -1,0 +1,37 @@
+{
+  "batch_truth": {
+    "unique_events": 14,
+    "orders": 9,
+    "revenue_cents": 13500,
+    "reviews": 5,
+    "negative_reviews": 4,
+    "invalid": 1
+  },
+  "accepted_cents": 12200,
+  "late_cents": 1300,
+  "sum_cents": 13500,
+  "pass": true,
+  "manual_first_window_cents": "1000 + 1500 = 2500",
+  "boundary": {
+    "event_id": "order-boundary",
+    "source_offset": 15,
+    "kind": "order",
+    "event_time_ms": 1793527260000,
+    "window_start_ms": 1793527260000,
+    "watermark_ms": 1793527335000,
+    "amount_cents": 800,
+    "reason": "watermark >= window_end + grace",
+    "window_start": "2026-11-01T10:01:00.000+00:00",
+    "event_time": "2026-11-01T10:01:00.000+00:00",
+    "watermark": "2026-11-01T10:02:15.000+00:00",
+    "window_end_ms": 1793527320000,
+    "window_end": "2026-11-01T10:02:00.000+00:00",
+    "payload": {
+      "amount_cents": 800,
+      "event_id": "order-boundary",
+      "event_time": "2026-11-01T10:01:00+00:00",
+      "kind": "order",
+      "product_id": 5
+    }
+  }
+}

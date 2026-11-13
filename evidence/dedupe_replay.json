@@ -1,0 +1,73 @@
+{
+  "first": {
+    "status": "accepted",
+    "offset": 0,
+    "event_id": "order-a",
+    "watermark_ms": 1793527205000,
+    "window_start": "2026-11-01T10:00:00.000+00:00",
+    "closed_windows": 0,
+    "checkpoint": 0
+  },
+  "duplicate": {
+    "status": "duplicate",
+    "offset": 1,
+    "event_id": "order-a",
+    "checkpoint": 1
+  },
+  "replay": {
+    "status": "replayed",
+    "offset": 1,
+    "checkpoint": 1
+  },
+  "unchanged_after_reopen": true,
+  "state": {
+    "checkpoint": 1,
+    "watermark": "2026-11-01T10:00:05.000+00:00",
+    "watermark_ms": 1793527205000,
+    "max_event_time_ms": 1793527205000,
+    "finalized": false,
+    "stats": {
+      "received": 2,
+      "accepted": 1,
+      "accepted_orders": 1,
+      "accepted_reviews": 0,
+      "duplicates": 1,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 0
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 1,
+        "revenue_cents": 1000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 1,
+      "revenue_cents": 1000,
+      "reviews": 0,
+      "negative_reviews": 0,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    }
+  }
+}

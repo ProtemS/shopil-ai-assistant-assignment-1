@@ -1,0 +1,96 @@
+[0m09:18:19  Running with dbt=1.12.7
+[0m09:18:20  Registered adapter: duckdb=1.11.1
+[0m09:18:22  [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on 'stg_reviews' in
+package 'shop_il' (models\staging\_reviews.yml). Arguments to generic tests
+should be nested under the `arguments` property.
+[0m09:18:23  Found 8 models, 25 data tests, 5 sources, 512 macros
+[0m09:18:23  
+[0m09:18:23  Concurrency: 4 threads (target='dev')
+[0m09:18:23  
+[0m09:18:24  1 of 33 START sql view model staging.stg_customers ............................. [RUN]
+[0m09:18:24  2 of 33 START sql view model staging.stg_orders ................................ [RUN]
+[0m09:18:24  3 of 33 START sql view model staging.stg_products .............................. [RUN]
+[0m09:18:24  4 of 33 START sql view model staging.stg_reviews ............................... [RUN]
+[0m09:18:24  3 of 33 OK created sql view model staging.stg_products ......................... [[32mOK[0m in 0.45s]
+[0m09:18:24  4 of 33 OK created sql view model staging.stg_reviews .......................... [[32mOK[0m in 0.46s]
+[0m09:18:24  2 of 33 OK created sql view model staging.stg_orders ........................... [[32mOK[0m in 0.46s]
+[0m09:18:24  1 of 33 OK created sql view model staging.stg_customers ........................ [[32mOK[0m in 0.47s]
+[0m09:18:24  5 of 33 START test not_null_stg_products_product_id ............................ [RUN]
+[0m09:18:24  6 of 33 START test unique_stg_products_product_id .............................. [RUN]
+[0m09:18:24  7 of 33 START test accepted_values_stg_reviews_rating__False__1__2__3__4__5 .... [RUN]
+[0m09:18:24  8 of 33 START test not_null_stg_reviews_review_id .............................. [RUN]
+[0m09:18:24  6 of 33 PASS unique_stg_products_product_id .................................... [[32mPASS[0m in 0.24s]
+[0m09:18:24  8 of 33 PASS not_null_stg_reviews_review_id .................................... [[32mPASS[0m in 0.24s]
+[0m09:18:24  9 of 33 START test relationships_stg_reviews_product_id__product_id__ref_stg_products_  [RUN]
+[0m09:18:24  7 of 33 PASS accepted_values_stg_reviews_rating__False__1__2__3__4__5 .......... [[32mPASS[0m in 0.25s]
+[0m09:18:24  10 of 33 START test unique_stg_reviews_review_id ............................... [RUN]
+[0m09:18:24  5 of 33 PASS not_null_stg_products_product_id .................................. [[32mPASS[0m in 0.30s]
+[0m09:18:24  11 of 33 START test accepted_values_stg_orders_status__paid__refunded__pending__cancelled  [RUN]
+[0m09:18:24  12 of 33 START test not_null_stg_orders_order_id ............................... [RUN]
+[0m09:18:25  9 of 33 PASS relationships_stg_reviews_product_id__product_id__ref_stg_products_  [[32mPASS[0m in 0.22s]
+[0m09:18:25  10 of 33 PASS unique_stg_reviews_review_id ..................................... [[32mPASS[0m in 0.23s]
+[0m09:18:25  11 of 33 PASS accepted_values_stg_orders_status__paid__refunded__pending__cancelled  [[32mPASS[0m in 0.17s]
+[0m09:18:25  13 of 33 START test unique_stg_orders_order_id ................................. [RUN]
+[0m09:18:25  12 of 33 PASS not_null_stg_orders_order_id ..................................... [[32mPASS[0m in 0.11s]
+[0m09:18:25  14 of 33 START test not_null_stg_customers_customer_id ......................... [RUN]
+[0m09:18:25  15 of 33 START test not_null_stg_customers_email ............................... [RUN]
+[0m09:18:25  16 of 33 START test relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [RUN]
+[0m09:18:25  13 of 33 PASS unique_stg_orders_order_id ....................................... [[32mPASS[0m in 0.14s]
+[0m09:18:25  14 of 33 PASS not_null_stg_customers_customer_id ............................... [[32mPASS[0m in 0.14s]
+[0m09:18:25  15 of 33 PASS not_null_stg_customers_email ..................................... [[32mPASS[0m in 0.15s]
+[0m09:18:25  16 of 33 WARN 19 relationships_stg_orders_customer_id__customer_id__ref_stg_customers_  [[33mWARN 19[0m in 0.14s]
+[0m09:18:25  17 of 33 START test unique_stg_customers_customer_id ........................... [RUN]
+[0m09:18:25  18 of 33 START test unique_stg_customers_email ................................. [RUN]
+[0m09:18:25  17 of 33 PASS unique_stg_customers_customer_id ................................. [[32mPASS[0m in 0.12s]
+[0m09:18:25  18 of 33 PASS unique_stg_customers_email ....................................... [[32mPASS[0m in 0.12s]
+[0m09:18:25  19 of 33 START sql table model marts.fct_orders ................................ [RUN]
+[0m09:18:25  19 of 33 OK created sql table model marts.fct_orders ........................... [[32mOK[0m in 0.22s]
+[0m09:18:25  20 of 33 START test not_null_fct_orders_amount ................................. [RUN]
+[0m09:18:25  21 of 33 START test not_null_fct_orders_order_id ............................... [RUN]
+[0m09:18:25  22 of 33 START test unique_fct_orders_order_id ................................. [RUN]
+[0m09:18:25  21 of 33 PASS not_null_fct_orders_order_id ..................................... [[32mPASS[0m in 0.07s]
+[0m09:18:25  20 of 33 PASS not_null_fct_orders_amount ....................................... [[32mPASS[0m in 0.08s]
+[0m09:18:25  22 of 33 PASS unique_fct_orders_order_id ....................................... [[32mPASS[0m in 0.10s]
+[0m09:18:25  23 of 33 START sql table model marts.dim_customers ............................. [RUN]
+[0m09:18:25  24 of 33 START sql table model marts.mart_daily_revenue ........................ [RUN]
+[0m09:18:25  25 of 33 START sql table model marts.mart_product_reviews ...................... [RUN]
+[0m09:18:25  24 of 33 OK created sql table model marts.mart_daily_revenue ................... [[32mOK[0m in 0.15s]
+[0m09:18:25  26 of 33 START test assert_no_negative_revenue ................................. [RUN]
+[0m09:18:25  27 of 33 START test not_null_mart_daily_revenue_order_date ..................... [RUN]
+[0m09:18:25  23 of 33 OK created sql table model marts.dim_customers ........................ [[32mOK[0m in 0.22s]
+[0m09:18:25  25 of 33 OK created sql table model marts.mart_product_reviews ................. [[32mOK[0m in 0.23s]
+[0m09:18:25  28 of 33 START test unique_mart_daily_revenue_order_date ....................... [RUN]
+[0m09:18:25  29 of 33 START test not_null_dim_customers_customer_id ......................... [RUN]
+[0m09:18:25  26 of 33 PASS assert_no_negative_revenue ....................................... [[32mPASS[0m in 0.12s]
+[0m09:18:25  30 of 33 START test unique_dim_customers_customer_id ........................... [RUN]
+[0m09:18:26  27 of 33 PASS not_null_mart_daily_revenue_order_date ........................... [[32mPASS[0m in 0.14s]
+[0m09:18:26  31 of 33 START test not_null_mart_product_reviews_product_id ................... [RUN]
+[0m09:18:26  28 of 33 PASS unique_mart_daily_revenue_order_date ............................. [[32mPASS[0m in 0.11s]
+[0m09:18:26  29 of 33 PASS not_null_dim_customers_customer_id ............................... [[32mPASS[0m in 0.12s]
+[0m09:18:26  32 of 33 START test revenue_not_multiplied ..................................... [RUN]
+[0m09:18:26  33 of 33 START test unique_mart_product_reviews_product_id ..................... [RUN]
+[0m09:18:26  30 of 33 PASS unique_dim_customers_customer_id ................................. [[32mPASS[0m in 0.13s]
+[0m09:18:26  31 of 33 PASS not_null_mart_product_reviews_product_id ......................... [[32mPASS[0m in 0.12s]
+[0m09:18:26  32 of 33 PASS revenue_not_multiplied ........................................... [[32mPASS[0m in 0.09s]
+[0m09:18:26  33 of 33 PASS unique_mart_product_reviews_product_id ........................... [[32mPASS[0m in 0.09s]
+[0m09:18:26  
+[0m09:18:26  Finished running 4 table models, 25 data tests, 4 view models in 0 hours 0 minutes and 2.82 seconds (2.82s).
+[0m09:18:26  
+[0m09:18:26  [33mCompleted with 1 warning:[0m
+[0m09:18:26  
+[0m09:18:26  [[33mWARNING[0m]: in test relationships_stg_orders_customer_id__customer_id__ref_stg_customers_ (models\staging\_staging.yml)
+[0m09:18:26  [[33mWARNING[0m]: Got 19 results, configured to warn if != 0
+[0m09:18:26  
+[0m09:18:26    compiled code at target\compiled\shop_il\models\staging\_staging.yml\relationships_stg_orders_96411fe0c89b49c3f4da955dfd358ba0.sql
+[0m09:18:26  
+[0m09:18:26  Done. PASS=32 WARN=1 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=33
+[0m09:18:26  [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+

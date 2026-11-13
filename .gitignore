@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+.dlt*/
+*.egg-info/
+models/
+*.duckdb*
+*.sqlite*
+dbt_project/target/
+dbt_project/logs/
+evidence/chat_audit.jsonl

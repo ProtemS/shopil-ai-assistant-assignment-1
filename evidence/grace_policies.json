@@ -1,0 +1,1018 @@
+{
+  "0": {
+    "decisions": [
+      {
+        "status": "accepted",
+        "offset": 0,
+        "event_id": "order-a",
+        "watermark_ms": 1793527205000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 0
+      },
+      {
+        "status": "accepted",
+        "offset": 1,
+        "event_id": "review-1",
+        "watermark_ms": 1793527210000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 1
+      },
+      {
+        "status": "accepted",
+        "offset": 2,
+        "event_id": "order-b",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "closed_windows": 2,
+        "checkpoint": 2
+      },
+      {
+        "status": "late",
+        "offset": 3,
+        "event_id": "order-c",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "checkpoint": 3
+      },
+      {
+        "status": "late",
+        "offset": 4,
+        "event_id": "review-2",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "checkpoint": 4
+      },
+      {
+        "status": "duplicate",
+        "offset": 5,
+        "event_id": "order-a",
+        "checkpoint": 5
+      },
+      {
+        "status": "late",
+        "offset": 6,
+        "event_id": "review-3",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "checkpoint": 6
+      },
+      {
+        "status": "late",
+        "offset": 7,
+        "event_id": "review-4",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "checkpoint": 7
+      },
+      {
+        "status": "accepted",
+        "offset": 8,
+        "event_id": "order-d",
+        "watermark_ms": 1793527275000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 8
+      },
+      {
+        "status": "late",
+        "offset": 9,
+        "event_id": "order-late",
+        "watermark_ms": 1793527275000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "checkpoint": 9
+      },
+      {
+        "status": "accepted",
+        "offset": 10,
+        "event_id": "order-e",
+        "watermark_ms": 1793527325000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 1,
+        "checkpoint": 10
+      },
+      {
+        "status": "invalid",
+        "offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "checkpoint": 11
+      },
+      {
+        "status": "accepted",
+        "offset": 12,
+        "event_id": "order-f",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 12
+      },
+      {
+        "status": "accepted",
+        "offset": 13,
+        "event_id": "review-5",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 13
+      },
+      {
+        "status": "duplicate",
+        "offset": 14,
+        "event_id": "order-late",
+        "checkpoint": 14
+      },
+      {
+        "status": "late",
+        "offset": 15,
+        "event_id": "order-boundary",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "checkpoint": 15
+      },
+      {
+        "status": "accepted",
+        "offset": 16,
+        "event_id": "order-h",
+        "watermark_ms": 1793527395000,
+        "window_start": "2026-11-01T10:03:00.000+00:00",
+        "closed_windows": 2,
+        "checkpoint": 16
+      }
+    ],
+    "snapshot": {
+      "checkpoint": 16,
+      "next_offset": 17,
+      "max_event_time_ms": 1793527395000,
+      "max_event_time": "2026-11-01T10:03:15.000+00:00",
+      "watermark_ms": 1793527395000,
+      "watermark": "2026-11-01T10:03:15.000+00:00",
+      "finalized": true,
+      "config": {
+        "window_seconds": 60,
+        "grace_seconds": 0,
+        "out_of_order_seconds": 0,
+        "alert_threshold": 3
+      },
+      "stats": {
+        "received": 17,
+        "accepted": 8,
+        "accepted_orders": 6,
+        "accepted_reviews": 2,
+        "duplicates": 2,
+        "late": 6,
+        "invalid": 1,
+        "revenue_windows_emitted": 4,
+        "review_windows_emitted": 2,
+        "alerts_emitted": 0
+      },
+      "open_windows": [],
+      "open_review_windows": [],
+      "revenue_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "orders": 1,
+          "revenue_cents": 1000,
+          "emitted_at_watermark_ms": 1793527265000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527260000,
+          "window_end_ms": 1793527320000,
+          "orders": 2,
+          "revenue_cents": 5000,
+          "emitted_at_watermark_ms": 1793527325000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:02:05.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "orders": 2,
+          "revenue_cents": 3500,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527380000,
+          "window_end_ms": 1793527440000,
+          "orders": 1,
+          "revenue_cents": 1200,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:03:00.000+00:00",
+          "window_end": "2026-11-01T10:04:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "review_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "product_id": 5,
+          "reviews": 1,
+          "negative_reviews": 1,
+          "emitted_at_watermark_ms": 1793527265000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "product_id": 5,
+          "reviews": 1,
+          "negative_reviews": 0,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "alerts": [],
+      "late_events": [
+        {
+          "event_id": "order-c",
+          "source_offset": 3,
+          "kind": "order",
+          "event_time_ms": 1793527220000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527265000,
+          "amount_cents": 1500,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:20.000+00:00",
+          "watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "amount_cents": 1500,
+            "event_id": "order-c",
+            "event_time": "2026-11-01T10:00:20+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        },
+        {
+          "event_id": "review-2",
+          "source_offset": 4,
+          "kind": "review",
+          "event_time_ms": 1793527212000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527265000,
+          "amount_cents": null,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:12.000+00:00",
+          "watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "event_id": "review-2",
+            "event_time": "2026-11-01T10:00:12+00:00",
+            "kind": "review",
+            "product_id": 5,
+            "rating": 2,
+            "text": "איכות ירודה"
+          }
+        },
+        {
+          "event_id": "review-3",
+          "source_offset": 6,
+          "kind": "review",
+          "event_time_ms": 1793527215000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527265000,
+          "amount_cents": null,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:15.000+00:00",
+          "watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "event_id": "review-3",
+            "event_time": "2026-11-01T10:00:15+00:00",
+            "kind": "review",
+            "product_id": 5,
+            "rating": 1,
+            "text": "לא עובד בכלל"
+          }
+        },
+        {
+          "event_id": "review-4",
+          "source_offset": 7,
+          "kind": "review",
+          "event_time_ms": 1793527218000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527265000,
+          "amount_cents": null,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:18.000+00:00",
+          "watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "event_id": "review-4",
+            "event_time": "2026-11-01T10:00:18+00:00",
+            "kind": "review",
+            "product_id": 5,
+            "rating": 1,
+            "text": "הסוללה נגמרת מהר"
+          }
+        },
+        {
+          "event_id": "order-late",
+          "source_offset": 9,
+          "kind": "order",
+          "event_time_ms": 1793527225000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527275000,
+          "amount_cents": 500,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:25.000+00:00",
+          "watermark": "2026-11-01T10:01:15.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "amount_cents": 500,
+            "event_id": "order-late",
+            "event_time": "2026-11-01T10:00:25+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        },
+        {
+          "event_id": "order-boundary",
+          "source_offset": 15,
+          "kind": "order",
+          "event_time_ms": 1793527260000,
+          "window_start_ms": 1793527260000,
+          "watermark_ms": 1793527335000,
+          "amount_cents": 800,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "event_time": "2026-11-01T10:01:00.000+00:00",
+          "watermark": "2026-11-01T10:02:15.000+00:00",
+          "window_end_ms": 1793527320000,
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "payload": {
+            "amount_cents": 800,
+            "event_id": "order-boundary",
+            "event_time": "2026-11-01T10:01:00+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "dead_letters": [
+        {
+          "source_offset": 11,
+          "reason": "amount_cents must be an integer >= 0",
+          "payload": {
+            "amount_cents": 19.9,
+            "event_id": "bad-money",
+            "event_time": "2026-11-01T10:02:10+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "totals": {
+        "orders": 6,
+        "revenue_cents": 10700,
+        "reviews": 2,
+        "negative_reviews": 1,
+        "late_orders": 3,
+        "late_order_cents": 2800,
+        "late_reviews": 3
+      }
+    }
+  },
+  "10": {
+    "decisions": [
+      {
+        "status": "accepted",
+        "offset": 0,
+        "event_id": "order-a",
+        "watermark_ms": 1793527205000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 0
+      },
+      {
+        "status": "accepted",
+        "offset": 1,
+        "event_id": "review-1",
+        "watermark_ms": 1793527210000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 1
+      },
+      {
+        "status": "accepted",
+        "offset": 2,
+        "event_id": "order-b",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 2
+      },
+      {
+        "status": "accepted",
+        "offset": 3,
+        "event_id": "order-c",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 3
+      },
+      {
+        "status": "accepted",
+        "offset": 4,
+        "event_id": "review-2",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 4
+      },
+      {
+        "status": "duplicate",
+        "offset": 5,
+        "event_id": "order-a",
+        "checkpoint": 5
+      },
+      {
+        "status": "accepted",
+        "offset": 6,
+        "event_id": "review-3",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 6
+      },
+      {
+        "status": "accepted",
+        "offset": 7,
+        "event_id": "review-4",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 7
+      },
+      {
+        "status": "accepted",
+        "offset": 8,
+        "event_id": "order-d",
+        "watermark_ms": 1793527275000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "closed_windows": 2,
+        "checkpoint": 8
+      },
+      {
+        "status": "late",
+        "offset": 9,
+        "event_id": "order-late",
+        "watermark_ms": 1793527275000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "checkpoint": 9
+      },
+      {
+        "status": "accepted",
+        "offset": 10,
+        "event_id": "order-e",
+        "watermark_ms": 1793527325000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 10
+      },
+      {
+        "status": "invalid",
+        "offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "checkpoint": 11
+      },
+      {
+        "status": "accepted",
+        "offset": 12,
+        "event_id": "order-f",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 1,
+        "checkpoint": 12
+      },
+      {
+        "status": "accepted",
+        "offset": 13,
+        "event_id": "review-5",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 13
+      },
+      {
+        "status": "duplicate",
+        "offset": 14,
+        "event_id": "order-late",
+        "checkpoint": 14
+      },
+      {
+        "status": "late",
+        "offset": 15,
+        "event_id": "order-boundary",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "checkpoint": 15
+      },
+      {
+        "status": "accepted",
+        "offset": 16,
+        "event_id": "order-h",
+        "watermark_ms": 1793527395000,
+        "window_start": "2026-11-01T10:03:00.000+00:00",
+        "closed_windows": 2,
+        "checkpoint": 16
+      }
+    ],
+    "snapshot": {
+      "checkpoint": 16,
+      "next_offset": 17,
+      "max_event_time_ms": 1793527395000,
+      "max_event_time": "2026-11-01T10:03:15.000+00:00",
+      "watermark_ms": 1793527395000,
+      "watermark": "2026-11-01T10:03:15.000+00:00",
+      "finalized": true,
+      "config": {
+        "window_seconds": 60,
+        "grace_seconds": 10,
+        "out_of_order_seconds": 0,
+        "alert_threshold": 3
+      },
+      "stats": {
+        "received": 17,
+        "accepted": 12,
+        "accepted_orders": 7,
+        "accepted_reviews": 5,
+        "duplicates": 2,
+        "late": 2,
+        "invalid": 1,
+        "revenue_windows_emitted": 4,
+        "review_windows_emitted": 2,
+        "alerts_emitted": 1
+      },
+      "open_windows": [],
+      "open_review_windows": [],
+      "revenue_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "orders": 2,
+          "revenue_cents": 2500,
+          "emitted_at_watermark_ms": 1793527275000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527260000,
+          "window_end_ms": 1793527320000,
+          "orders": 2,
+          "revenue_cents": 5000,
+          "emitted_at_watermark_ms": 1793527335000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "orders": 2,
+          "revenue_cents": 3500,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527380000,
+          "window_end_ms": 1793527440000,
+          "orders": 1,
+          "revenue_cents": 1200,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:03:00.000+00:00",
+          "window_end": "2026-11-01T10:04:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "review_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "product_id": 5,
+          "reviews": 4,
+          "negative_reviews": 4,
+          "emitted_at_watermark_ms": 1793527275000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "product_id": 5,
+          "reviews": 1,
+          "negative_reviews": 0,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "alerts": [
+        {
+          "product_id": 5,
+          "window_start_ms": 1793527200000,
+          "negative_reviews": 3,
+          "trigger_event_id": "review-3",
+          "emitted_at_watermark_ms": 1793527265000,
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00"
+        }
+      ],
+      "late_events": [
+        {
+          "event_id": "order-late",
+          "source_offset": 9,
+          "kind": "order",
+          "event_time_ms": 1793527225000,
+          "window_start_ms": 1793527200000,
+          "watermark_ms": 1793527275000,
+          "amount_cents": 500,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "event_time": "2026-11-01T10:00:25.000+00:00",
+          "watermark": "2026-11-01T10:01:15.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "payload": {
+            "amount_cents": 500,
+            "event_id": "order-late",
+            "event_time": "2026-11-01T10:00:25+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        },
+        {
+          "event_id": "order-boundary",
+          "source_offset": 15,
+          "kind": "order",
+          "event_time_ms": 1793527260000,
+          "window_start_ms": 1793527260000,
+          "watermark_ms": 1793527335000,
+          "amount_cents": 800,
+          "reason": "watermark >= window_end + grace",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "event_time": "2026-11-01T10:01:00.000+00:00",
+          "watermark": "2026-11-01T10:02:15.000+00:00",
+          "window_end_ms": 1793527320000,
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "payload": {
+            "amount_cents": 800,
+            "event_id": "order-boundary",
+            "event_time": "2026-11-01T10:01:00+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "dead_letters": [
+        {
+          "source_offset": 11,
+          "reason": "amount_cents must be an integer >= 0",
+          "payload": {
+            "amount_cents": 19.9,
+            "event_id": "bad-money",
+            "event_time": "2026-11-01T10:02:10+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "totals": {
+        "orders": 7,
+        "revenue_cents": 12200,
+        "reviews": 5,
+        "negative_reviews": 4,
+        "late_orders": 2,
+        "late_order_cents": 1300,
+        "late_reviews": 0
+      }
+    }
+  },
+  "120": {
+    "decisions": [
+      {
+        "status": "accepted",
+        "offset": 0,
+        "event_id": "order-a",
+        "watermark_ms": 1793527205000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 0
+      },
+      {
+        "status": "accepted",
+        "offset": 1,
+        "event_id": "review-1",
+        "watermark_ms": 1793527210000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 1
+      },
+      {
+        "status": "accepted",
+        "offset": 2,
+        "event_id": "order-b",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 2
+      },
+      {
+        "status": "accepted",
+        "offset": 3,
+        "event_id": "order-c",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 3
+      },
+      {
+        "status": "accepted",
+        "offset": 4,
+        "event_id": "review-2",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 4
+      },
+      {
+        "status": "duplicate",
+        "offset": 5,
+        "event_id": "order-a",
+        "checkpoint": 5
+      },
+      {
+        "status": "accepted",
+        "offset": 6,
+        "event_id": "review-3",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 6
+      },
+      {
+        "status": "accepted",
+        "offset": 7,
+        "event_id": "review-4",
+        "watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 7
+      },
+      {
+        "status": "accepted",
+        "offset": 8,
+        "event_id": "order-d",
+        "watermark_ms": 1793527275000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 8
+      },
+      {
+        "status": "accepted",
+        "offset": 9,
+        "event_id": "order-late",
+        "watermark_ms": 1793527275000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 9
+      },
+      {
+        "status": "accepted",
+        "offset": 10,
+        "event_id": "order-e",
+        "watermark_ms": 1793527325000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 10
+      },
+      {
+        "status": "invalid",
+        "offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "checkpoint": 11
+      },
+      {
+        "status": "accepted",
+        "offset": 12,
+        "event_id": "order-f",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 12
+      },
+      {
+        "status": "accepted",
+        "offset": 13,
+        "event_id": "review-5",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 13
+      },
+      {
+        "status": "duplicate",
+        "offset": 14,
+        "event_id": "order-late",
+        "checkpoint": 14
+      },
+      {
+        "status": "accepted",
+        "offset": 15,
+        "event_id": "order-boundary",
+        "watermark_ms": 1793527335000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "closed_windows": 0,
+        "checkpoint": 15
+      },
+      {
+        "status": "accepted",
+        "offset": 16,
+        "event_id": "order-h",
+        "watermark_ms": 1793527395000,
+        "window_start": "2026-11-01T10:03:00.000+00:00",
+        "closed_windows": 2,
+        "checkpoint": 16
+      }
+    ],
+    "snapshot": {
+      "checkpoint": 16,
+      "next_offset": 17,
+      "max_event_time_ms": 1793527395000,
+      "max_event_time": "2026-11-01T10:03:15.000+00:00",
+      "watermark_ms": 1793527395000,
+      "watermark": "2026-11-01T10:03:15.000+00:00",
+      "finalized": true,
+      "config": {
+        "window_seconds": 60,
+        "grace_seconds": 120,
+        "out_of_order_seconds": 0,
+        "alert_threshold": 3
+      },
+      "stats": {
+        "received": 17,
+        "accepted": 14,
+        "accepted_orders": 9,
+        "accepted_reviews": 5,
+        "duplicates": 2,
+        "late": 0,
+        "invalid": 1,
+        "revenue_windows_emitted": 4,
+        "review_windows_emitted": 2,
+        "alerts_emitted": 1
+      },
+      "open_windows": [],
+      "open_review_windows": [],
+      "revenue_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "orders": 3,
+          "revenue_cents": 3000,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527260000,
+          "window_end_ms": 1793527320000,
+          "orders": 3,
+          "revenue_cents": 5800,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:01:00.000+00:00",
+          "window_end": "2026-11-01T10:02:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "orders": 2,
+          "revenue_cents": 3500,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527380000,
+          "window_end_ms": 1793527440000,
+          "orders": 1,
+          "revenue_cents": 1200,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:03:00.000+00:00",
+          "window_end": "2026-11-01T10:04:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "review_windows": [
+        {
+          "window_start_ms": 1793527200000,
+          "window_end_ms": 1793527260000,
+          "product_id": 5,
+          "reviews": 4,
+          "negative_reviews": 4,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "watermark",
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "window_end": "2026-11-01T10:01:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        },
+        {
+          "window_start_ms": 1793527320000,
+          "window_end_ms": 1793527380000,
+          "product_id": 5,
+          "reviews": 1,
+          "negative_reviews": 0,
+          "emitted_at_watermark_ms": 1793527395000,
+          "closure_reason": "demo_end_of_input",
+          "window_start": "2026-11-01T10:02:00.000+00:00",
+          "window_end": "2026-11-01T10:03:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+        }
+      ],
+      "alerts": [
+        {
+          "product_id": 5,
+          "window_start_ms": 1793527200000,
+          "negative_reviews": 3,
+          "trigger_event_id": "review-3",
+          "emitted_at_watermark_ms": 1793527265000,
+          "window_start": "2026-11-01T10:00:00.000+00:00",
+          "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+          "window_end_ms": 1793527260000,
+          "window_end": "2026-11-01T10:01:00.000+00:00"
+        }
+      ],
+      "late_events": [],
+      "dead_letters": [
+        {
+          "source_offset": 11,
+          "reason": "amount_cents must be an integer >= 0",
+          "payload": {
+            "amount_cents": 19.9,
+            "event_id": "bad-money",
+            "event_time": "2026-11-01T10:02:10+00:00",
+            "kind": "order",
+            "product_id": 5
+          }
+        }
+      ],
+      "totals": {
+        "orders": 9,
+        "revenue_cents": 13500,
+        "reviews": 5,
+        "negative_reviews": 4,
+        "late_orders": 0,
+        "late_order_cents": 0,
+        "late_reviews": 0
+      }
+    }
+  }
+}

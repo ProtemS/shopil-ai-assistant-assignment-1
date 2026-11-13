@@ -1,0 +1,1904 @@
+[
+  {
+    "checkpoint": 0,
+    "next_offset": 1,
+    "max_event_time_ms": 1793527205000,
+    "max_event_time": "2026-11-01T10:00:05.000+00:00",
+    "watermark_ms": 1793527205000,
+    "watermark": "2026-11-01T10:00:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 1,
+      "accepted": 1,
+      "accepted_orders": 1,
+      "accepted_reviews": 0,
+      "duplicates": 0,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 0
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 1,
+        "revenue_cents": 1000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 1,
+      "revenue_cents": 1000,
+      "reviews": 0,
+      "negative_reviews": 0,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 1,
+      "consumed": 1,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 1,
+    "next_offset": 2,
+    "max_event_time_ms": 1793527210000,
+    "max_event_time": "2026-11-01T10:00:10.000+00:00",
+    "watermark_ms": 1793527210000,
+    "watermark": "2026-11-01T10:00:10.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 2,
+      "accepted": 2,
+      "accepted_orders": 1,
+      "accepted_reviews": 1,
+      "duplicates": 0,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 0
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 1,
+        "revenue_cents": 1000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "product_id": 5,
+        "reviews": 1,
+        "negative_reviews": 1,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 1,
+      "revenue_cents": 1000,
+      "reviews": 1,
+      "negative_reviews": 1,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 2,
+      "consumed": 2,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 2,
+    "next_offset": 3,
+    "max_event_time_ms": 1793527265000,
+    "max_event_time": "2026-11-01T10:01:05.000+00:00",
+    "watermark_ms": 1793527265000,
+    "watermark": "2026-11-01T10:01:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 3,
+      "accepted": 3,
+      "accepted_orders": 2,
+      "accepted_reviews": 1,
+      "duplicates": 0,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 0
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 1,
+        "revenue_cents": 1000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 1,
+        "revenue_cents": 2000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "product_id": 5,
+        "reviews": 1,
+        "negative_reviews": 1,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 2,
+      "revenue_cents": 3000,
+      "reviews": 1,
+      "negative_reviews": 1,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 3,
+      "consumed": 3,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 3,
+    "next_offset": 4,
+    "max_event_time_ms": 1793527265000,
+    "max_event_time": "2026-11-01T10:01:05.000+00:00",
+    "watermark_ms": 1793527265000,
+    "watermark": "2026-11-01T10:01:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 4,
+      "accepted": 4,
+      "accepted_orders": 3,
+      "accepted_reviews": 1,
+      "duplicates": 0,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 0
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 1,
+        "revenue_cents": 2000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "product_id": 5,
+        "reviews": 1,
+        "negative_reviews": 1,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 3,
+      "revenue_cents": 4500,
+      "reviews": 1,
+      "negative_reviews": 1,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 4,
+      "consumed": 4,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 4,
+    "next_offset": 5,
+    "max_event_time_ms": 1793527265000,
+    "max_event_time": "2026-11-01T10:01:05.000+00:00",
+    "watermark_ms": 1793527265000,
+    "watermark": "2026-11-01T10:01:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 5,
+      "accepted": 5,
+      "accepted_orders": 3,
+      "accepted_reviews": 2,
+      "duplicates": 0,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 0
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 1,
+        "revenue_cents": 2000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "product_id": 5,
+        "reviews": 2,
+        "negative_reviews": 2,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 3,
+      "revenue_cents": 4500,
+      "reviews": 2,
+      "negative_reviews": 2,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 5,
+      "consumed": 5,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 5,
+    "next_offset": 6,
+    "max_event_time_ms": 1793527265000,
+    "max_event_time": "2026-11-01T10:01:05.000+00:00",
+    "watermark_ms": 1793527265000,
+    "watermark": "2026-11-01T10:01:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 6,
+      "accepted": 5,
+      "accepted_orders": 3,
+      "accepted_reviews": 2,
+      "duplicates": 1,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 0
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 1,
+        "revenue_cents": 2000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "product_id": 5,
+        "reviews": 2,
+        "negative_reviews": 2,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 3,
+      "revenue_cents": 4500,
+      "reviews": 2,
+      "negative_reviews": 2,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 6,
+      "consumed": 6,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 6,
+    "next_offset": 7,
+    "max_event_time_ms": 1793527265000,
+    "max_event_time": "2026-11-01T10:01:05.000+00:00",
+    "watermark_ms": 1793527265000,
+    "watermark": "2026-11-01T10:01:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 7,
+      "accepted": 6,
+      "accepted_orders": 3,
+      "accepted_reviews": 3,
+      "duplicates": 1,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 1,
+        "revenue_cents": 2000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "product_id": 5,
+        "reviews": 3,
+        "negative_reviews": 3,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 3,
+      "revenue_cents": 4500,
+      "reviews": 3,
+      "negative_reviews": 3,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 7,
+      "consumed": 7,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 7,
+    "next_offset": 8,
+    "max_event_time_ms": 1793527265000,
+    "max_event_time": "2026-11-01T10:01:05.000+00:00",
+    "watermark_ms": 1793527265000,
+    "watermark": "2026-11-01T10:01:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 8,
+      "accepted": 7,
+      "accepted_orders": 3,
+      "accepted_reviews": 4,
+      "duplicates": 1,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 0,
+      "review_windows_emitted": 0,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 1,
+        "revenue_cents": 2000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [],
+    "review_windows": [],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 3,
+      "revenue_cents": 4500,
+      "reviews": 4,
+      "negative_reviews": 4,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 8,
+      "consumed": 8,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 8,
+    "next_offset": 9,
+    "max_event_time_ms": 1793527275000,
+    "max_event_time": "2026-11-01T10:01:15.000+00:00",
+    "watermark_ms": 1793527275000,
+    "watermark": "2026-11-01T10:01:15.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 9,
+      "accepted": 8,
+      "accepted_orders": 4,
+      "accepted_reviews": 4,
+      "duplicates": 1,
+      "late": 0,
+      "invalid": 0,
+      "revenue_windows_emitted": 1,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [],
+    "dead_letters": [],
+    "totals": {
+      "orders": 4,
+      "revenue_cents": 7500,
+      "reviews": 4,
+      "negative_reviews": 4,
+      "late_orders": 0,
+      "late_order_cents": 0,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 9,
+      "consumed": 9,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 9,
+    "next_offset": 10,
+    "max_event_time_ms": 1793527275000,
+    "max_event_time": "2026-11-01T10:01:15.000+00:00",
+    "watermark_ms": 1793527275000,
+    "watermark": "2026-11-01T10:01:15.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 10,
+      "accepted": 8,
+      "accepted_orders": 4,
+      "accepted_reviews": 4,
+      "duplicates": 1,
+      "late": 1,
+      "invalid": 0,
+      "revenue_windows_emitted": 1,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [],
+    "totals": {
+      "orders": 4,
+      "revenue_cents": 7500,
+      "reviews": 4,
+      "negative_reviews": 4,
+      "late_orders": 1,
+      "late_order_cents": 500,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 10,
+      "consumed": 10,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 10,
+    "next_offset": 11,
+    "max_event_time_ms": 1793527325000,
+    "max_event_time": "2026-11-01T10:02:05.000+00:00",
+    "watermark_ms": 1793527325000,
+    "watermark": "2026-11-01T10:02:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 11,
+      "accepted": 9,
+      "accepted_orders": 5,
+      "accepted_reviews": 4,
+      "duplicates": 1,
+      "late": 1,
+      "invalid": 0,
+      "revenue_windows_emitted": 1,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527320000,
+        "orders": 1,
+        "revenue_cents": 2500,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [],
+    "totals": {
+      "orders": 5,
+      "revenue_cents": 10000,
+      "reviews": 4,
+      "negative_reviews": 4,
+      "late_orders": 1,
+      "late_order_cents": 500,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 11,
+      "consumed": 11,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 11,
+    "next_offset": 12,
+    "max_event_time_ms": 1793527325000,
+    "max_event_time": "2026-11-01T10:02:05.000+00:00",
+    "watermark_ms": 1793527325000,
+    "watermark": "2026-11-01T10:02:05.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 12,
+      "accepted": 9,
+      "accepted_orders": 5,
+      "accepted_reviews": 4,
+      "duplicates": 1,
+      "late": 1,
+      "invalid": 1,
+      "revenue_windows_emitted": 1,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527320000,
+        "orders": 1,
+        "revenue_cents": 2500,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [
+      {
+        "source_offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "payload": {
+          "amount_cents": 19.9,
+          "event_id": "bad-money",
+          "event_time": "2026-11-01T10:02:10+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "totals": {
+      "orders": 5,
+      "revenue_cents": 10000,
+      "reviews": 4,
+      "negative_reviews": 4,
+      "late_orders": 1,
+      "late_order_cents": 500,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 12,
+      "consumed": 12,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 12,
+    "next_offset": 13,
+    "max_event_time_ms": 1793527335000,
+    "max_event_time": "2026-11-01T10:02:15.000+00:00",
+    "watermark_ms": 1793527335000,
+    "watermark": "2026-11-01T10:02:15.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 13,
+      "accepted": 10,
+      "accepted_orders": 6,
+      "accepted_reviews": 4,
+      "duplicates": 1,
+      "late": 1,
+      "invalid": 1,
+      "revenue_windows_emitted": 2,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 3500,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "window_end_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "emitted_at_watermark_ms": 1793527335000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end": "2026-11-01T10:02:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [
+      {
+        "source_offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "payload": {
+          "amount_cents": 19.9,
+          "event_id": "bad-money",
+          "event_time": "2026-11-01T10:02:10+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "totals": {
+      "orders": 6,
+      "revenue_cents": 11000,
+      "reviews": 4,
+      "negative_reviews": 4,
+      "late_orders": 1,
+      "late_order_cents": 500,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 13,
+      "consumed": 13,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 13,
+    "next_offset": 14,
+    "max_event_time_ms": 1793527335000,
+    "max_event_time": "2026-11-01T10:02:15.000+00:00",
+    "watermark_ms": 1793527335000,
+    "watermark": "2026-11-01T10:02:15.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 14,
+      "accepted": 11,
+      "accepted_orders": 6,
+      "accepted_reviews": 5,
+      "duplicates": 1,
+      "late": 1,
+      "invalid": 1,
+      "revenue_windows_emitted": 2,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 3500,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527320000,
+        "product_id": 5,
+        "reviews": 1,
+        "negative_reviews": 0,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "window_end_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "emitted_at_watermark_ms": 1793527335000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end": "2026-11-01T10:02:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [
+      {
+        "source_offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "payload": {
+          "amount_cents": 19.9,
+          "event_id": "bad-money",
+          "event_time": "2026-11-01T10:02:10+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "totals": {
+      "orders": 6,
+      "revenue_cents": 11000,
+      "reviews": 5,
+      "negative_reviews": 4,
+      "late_orders": 1,
+      "late_order_cents": 500,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 14,
+      "consumed": 14,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 14,
+    "next_offset": 15,
+    "max_event_time_ms": 1793527335000,
+    "max_event_time": "2026-11-01T10:02:15.000+00:00",
+    "watermark_ms": 1793527335000,
+    "watermark": "2026-11-01T10:02:15.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 15,
+      "accepted": 11,
+      "accepted_orders": 6,
+      "accepted_reviews": 5,
+      "duplicates": 2,
+      "late": 1,
+      "invalid": 1,
+      "revenue_windows_emitted": 2,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 3500,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527320000,
+        "product_id": 5,
+        "reviews": 1,
+        "negative_reviews": 0,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "window_end_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "emitted_at_watermark_ms": 1793527335000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end": "2026-11-01T10:02:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [
+      {
+        "source_offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "payload": {
+          "amount_cents": 19.9,
+          "event_id": "bad-money",
+          "event_time": "2026-11-01T10:02:10+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "totals": {
+      "orders": 6,
+      "revenue_cents": 11000,
+      "reviews": 5,
+      "negative_reviews": 4,
+      "late_orders": 1,
+      "late_order_cents": 500,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 15,
+      "consumed": 15,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 15,
+    "next_offset": 16,
+    "max_event_time_ms": 1793527335000,
+    "max_event_time": "2026-11-01T10:02:15.000+00:00",
+    "watermark_ms": 1793527335000,
+    "watermark": "2026-11-01T10:02:15.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 16,
+      "accepted": 11,
+      "accepted_orders": 6,
+      "accepted_reviews": 5,
+      "duplicates": 2,
+      "late": 2,
+      "invalid": 1,
+      "revenue_windows_emitted": 2,
+      "review_windows_emitted": 1,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 3500,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [
+      {
+        "window_start_ms": 1793527320000,
+        "product_id": 5,
+        "reviews": 1,
+        "negative_reviews": 0,
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end_ms": 1793527380000,
+        "window_end": "2026-11-01T10:03:00.000+00:00"
+      }
+    ],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "window_end_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "emitted_at_watermark_ms": 1793527335000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end": "2026-11-01T10:02:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      },
+      {
+        "event_id": "order-boundary",
+        "source_offset": 15,
+        "kind": "order",
+        "event_time_ms": 1793527260000,
+        "window_start_ms": 1793527260000,
+        "watermark_ms": 1793527335000,
+        "amount_cents": 800,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "event_time": "2026-11-01T10:01:00.000+00:00",
+        "watermark": "2026-11-01T10:02:15.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00",
+        "payload": {
+          "amount_cents": 800,
+          "event_id": "order-boundary",
+          "event_time": "2026-11-01T10:01:00+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [
+      {
+        "source_offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "payload": {
+          "amount_cents": 19.9,
+          "event_id": "bad-money",
+          "event_time": "2026-11-01T10:02:10+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "totals": {
+      "orders": 6,
+      "revenue_cents": 11000,
+      "reviews": 5,
+      "negative_reviews": 4,
+      "late_orders": 2,
+      "late_order_cents": 1300,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 16,
+      "consumed": 16,
+      "backpressure_waits": 0
+    }
+  },
+  {
+    "checkpoint": 16,
+    "next_offset": 17,
+    "max_event_time_ms": 1793527395000,
+    "max_event_time": "2026-11-01T10:03:15.000+00:00",
+    "watermark_ms": 1793527395000,
+    "watermark": "2026-11-01T10:03:15.000+00:00",
+    "finalized": false,
+    "config": {
+      "window_seconds": 60,
+      "grace_seconds": 10,
+      "out_of_order_seconds": 0,
+      "alert_threshold": 3
+    },
+    "stats": {
+      "received": 17,
+      "accepted": 12,
+      "accepted_orders": 7,
+      "accepted_reviews": 5,
+      "duplicates": 2,
+      "late": 2,
+      "invalid": 1,
+      "revenue_windows_emitted": 3,
+      "review_windows_emitted": 2,
+      "alerts_emitted": 1
+    },
+    "open_windows": [
+      {
+        "window_start_ms": 1793527380000,
+        "orders": 1,
+        "revenue_cents": 1200,
+        "window_start": "2026-11-01T10:03:00.000+00:00",
+        "window_end_ms": 1793527440000,
+        "window_end": "2026-11-01T10:04:00.000+00:00"
+      }
+    ],
+    "open_review_windows": [],
+    "revenue_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "orders": 2,
+        "revenue_cents": 2500,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527260000,
+        "window_end_ms": 1793527320000,
+        "orders": 2,
+        "revenue_cents": 5000,
+        "emitted_at_watermark_ms": 1793527335000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "window_end": "2026-11-01T10:02:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:02:15.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527320000,
+        "window_end_ms": 1793527380000,
+        "orders": 2,
+        "revenue_cents": 3500,
+        "emitted_at_watermark_ms": 1793527395000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end": "2026-11-01T10:03:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+      }
+    ],
+    "review_windows": [
+      {
+        "window_start_ms": 1793527200000,
+        "window_end_ms": 1793527260000,
+        "product_id": 5,
+        "reviews": 4,
+        "negative_reviews": 4,
+        "emitted_at_watermark_ms": 1793527275000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:15.000+00:00"
+      },
+      {
+        "window_start_ms": 1793527320000,
+        "window_end_ms": 1793527380000,
+        "product_id": 5,
+        "reviews": 1,
+        "negative_reviews": 0,
+        "emitted_at_watermark_ms": 1793527395000,
+        "closure_reason": "watermark",
+        "window_start": "2026-11-01T10:02:00.000+00:00",
+        "window_end": "2026-11-01T10:03:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:03:15.000+00:00"
+      }
+    ],
+    "alerts": [
+      {
+        "product_id": 5,
+        "window_start_ms": 1793527200000,
+        "negative_reviews": 3,
+        "trigger_event_id": "review-3",
+        "emitted_at_watermark_ms": 1793527265000,
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "emitted_at_watermark": "2026-11-01T10:01:05.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00"
+      }
+    ],
+    "late_events": [
+      {
+        "event_id": "order-late",
+        "source_offset": 9,
+        "kind": "order",
+        "event_time_ms": 1793527225000,
+        "window_start_ms": 1793527200000,
+        "watermark_ms": 1793527275000,
+        "amount_cents": 500,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:00:00.000+00:00",
+        "event_time": "2026-11-01T10:00:25.000+00:00",
+        "watermark": "2026-11-01T10:01:15.000+00:00",
+        "window_end_ms": 1793527260000,
+        "window_end": "2026-11-01T10:01:00.000+00:00",
+        "payload": {
+          "amount_cents": 500,
+          "event_id": "order-late",
+          "event_time": "2026-11-01T10:00:25+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      },
+      {
+        "event_id": "order-boundary",
+        "source_offset": 15,
+        "kind": "order",
+        "event_time_ms": 1793527260000,
+        "window_start_ms": 1793527260000,
+        "watermark_ms": 1793527335000,
+        "amount_cents": 800,
+        "reason": "watermark >= window_end + grace",
+        "window_start": "2026-11-01T10:01:00.000+00:00",
+        "event_time": "2026-11-01T10:01:00.000+00:00",
+        "watermark": "2026-11-01T10:02:15.000+00:00",
+        "window_end_ms": 1793527320000,
+        "window_end": "2026-11-01T10:02:00.000+00:00",
+        "payload": {
+          "amount_cents": 800,
+          "event_id": "order-boundary",
+          "event_time": "2026-11-01T10:01:00+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "dead_letters": [
+      {
+        "source_offset": 11,
+        "reason": "amount_cents must be an integer >= 0",
+        "payload": {
+          "amount_cents": 19.9,
+          "event_id": "bad-money",
+          "event_time": "2026-11-01T10:02:10+00:00",
+          "kind": "order",
+          "product_id": 5
+        }
+      }
+    ],
+    "totals": {
+      "orders": 7,
+      "revenue_cents": 12200,
+      "reviews": 5,
+      "negative_reviews": 4,
+      "late_orders": 2,
+      "late_order_cents": 1300,
+      "late_reviews": 0
+    },
+    "queue": {
+      "depth": 0,
+      "maxsize": 3,
+      "produced": 17,
+      "consumed": 17,
+      "backpressure_waits": 0
+    }
+  }
+]

@@ -1,0 +1,13 @@
+Pipeline shop_il load step finished in 0.44 seconds
+1 load package(s) were loaded to destination duckdb and into dataset raw
+The duckdb destination used duckdb:///C:\Users\rotem\Documents\Codex\2026-11-13\ok\outputs\shopil-assistant\warehouse.duckdb location to store data
+Load package 1794559409.6093223 is LOADED and contains no failed jobs
+orders written in this run: 600
+
+טבלאות ב-raw:
+  customers                       128 rows
+  github_issues                    40 rows
+  github_issues__labels            42 rows
+  orders                          600 rows
+  products                          8 rows
+

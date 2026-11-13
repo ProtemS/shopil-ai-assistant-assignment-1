@@ -1,0 +1,25 @@
+[
+  {
+    "test": "SIMULATED three rejections",
+    "status": "rejected_limit",
+    "attempts": 3
+  },
+  {
+    "test": "SIMULATED model / REAL concurrent ingestion",
+    "old_checkpoints": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "new_checkpoint": 1,
+    "old_revenue_cents": 100,
+    "new_open_window": [
+      {
+        "orders": 2,
+        "revenue_cents": 300,
+        "window_start_ms": 1793527200000
+      }
+    ]
+  }
+]

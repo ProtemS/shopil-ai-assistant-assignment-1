@@ -1,0 +1,5 @@
+Pipeline shop_il_reviews load step finished in 0.31 seconds
+1 load package(s) were loaded to destination duckdb and into dataset raw
+The duckdb destination used duckdb:///C:\Users\rotem\Documents\Codex\2026-11-13\ok\outputs\shopil-assistant\warehouse.duckdb location to store data
+Load package 1794559425.7916634 is LOADED and contains no failed jobs
+

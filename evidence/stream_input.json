@@ -1,0 +1,194 @@
+[
+  {
+    "offset": 0,
+    "event": {
+      "event_id": "order-a",
+      "kind": "order",
+      "event_time": "2026-11-01T10:00:05+00:00",
+      "product_id": 5,
+      "amount_cents": 1000
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 1,
+    "event": {
+      "event_id": "review-1",
+      "kind": "review",
+      "event_time": "2026-11-01T10:00:10+00:00",
+      "product_id": 5,
+      "rating": 1,
+      "text": "הגיע שבור"
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 2,
+    "event": {
+      "event_id": "order-b",
+      "kind": "order",
+      "event_time": "2026-11-01T10:01:05+00:00",
+      "product_id": 5,
+      "amount_cents": 2000
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 3,
+    "event": {
+      "event_id": "order-c",
+      "kind": "order",
+      "event_time": "2026-11-01T10:00:20+00:00",
+      "product_id": 5,
+      "amount_cents": 1500
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 4,
+    "event": {
+      "event_id": "review-2",
+      "kind": "review",
+      "event_time": "2026-11-01T10:00:12+00:00",
+      "product_id": 5,
+      "rating": 2,
+      "text": "איכות ירודה"
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 5,
+    "event": {
+      "event_id": "order-a",
+      "kind": "order",
+      "event_time": "2026-11-01T10:00:05+00:00",
+      "product_id": 5,
+      "amount_cents": 1000
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 6,
+    "event": {
+      "event_id": "review-3",
+      "kind": "review",
+      "event_time": "2026-11-01T10:00:15+00:00",
+      "product_id": 5,
+      "rating": 1,
+      "text": "לא עובד בכלל"
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 7,
+    "event": {
+      "event_id": "review-4",
+      "kind": "review",
+      "event_time": "2026-11-01T10:00:18+00:00",
+      "product_id": 5,
+      "rating": 1,
+      "text": "הסוללה נגמרת מהר"
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 8,
+    "event": {
+      "event_id": "order-d",
+      "kind": "order",
+      "event_time": "2026-11-01T10:01:15+00:00",
+      "product_id": 5,
+      "amount_cents": 3000
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 9,
+    "event": {
+      "event_id": "order-late",
+      "kind": "order",
+      "event_time": "2026-11-01T10:00:25+00:00",
+      "product_id": 5,
+      "amount_cents": 500
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 10,
+    "event": {
+      "event_id": "order-e",
+      "kind": "order",
+      "event_time": "2026-11-01T10:02:05+00:00",
+      "product_id": 5,
+      "amount_cents": 2500
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 11,
+    "event": {
+      "event_id": "bad-money",
+      "kind": "order",
+      "event_time": "2026-11-01T10:02:10+00:00",
+      "product_id": 5,
+      "amount_cents": 19.9
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 12,
+    "event": {
+      "event_id": "order-f",
+      "kind": "order",
+      "event_time": "2026-11-01T10:02:15+00:00",
+      "product_id": 5,
+      "amount_cents": 1000
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 13,
+    "event": {
+      "event_id": "review-5",
+      "kind": "review",
+      "event_time": "2026-11-01T10:02:05+00:00",
+      "product_id": 5,
+      "rating": 5,
+      "text": "מוצר מעולה"
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 14,
+    "event": {
+      "event_id": "order-late",
+      "kind": "order",
+      "event_time": "2026-11-01T10:00:25+00:00",
+      "product_id": 5,
+      "amount_cents": 500
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 15,
+    "event": {
+      "event_id": "order-boundary",
+      "kind": "order",
+      "event_time": "2026-11-01T10:01:00+00:00",
+      "product_id": 5,
+      "amount_cents": 800
+    },
+    "arrival_delay_s": 0.0
+  },
+  {
+    "offset": 16,
+    "event": {
+      "event_id": "order-h",
+      "kind": "order",
+      "event_time": "2026-11-01T10:03:15+00:00",
+      "product_id": 5,
+      "amount_cents": 1200
+    },
+    "arrival_delay_s": 0.0
+  }
+]
