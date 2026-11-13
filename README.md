@@ -46,6 +46,8 @@ The controller adds deterministic checks for the required paid-order figures, da
 
 Open http://127.0.0.1:7860. The synthetic producer runs throughout the session through bounded queues. Both modes call the same `StreamEngine.ingest`; each event commits separately. Monitor checkpoint, watermark, counters, open windows and alerts in the UI; produced/consumed queue metrics print to the console. Stop with Ctrl+C. SQLite checkpoints allow restart without double counting. Do not run two producers against the same database at once.
 
+The runtime supervisor displays running/recovering/stopped status. A SQLite operational error triggers up to three retries, reopening the database and recreating the deterministic source from its durable next offset. Persistent or non-storage errors stop visibly rather than leaving stale counters labeled active. Monitoring uses a read-only SQLite transaction. This was added after an observed disk I/O failure; the underlying storage cause was not established. Tests inject recoverable and persistent errors. For an isolated second preview use `python app.py --port 7861 --stream-db live_verified.sqlite`; never share one live database between two producers.
+
 Try asking about paid historical revenue, follow up about its period, then ask for net profit (expenses are absent). Select a product to include its clean review texts. The system supports numeric and product questions over the fixed allowlisted evidence; it does not execute model-generated SQL.
 
 ## Evidence and provenance
@@ -60,6 +62,7 @@ Try asking about paid historical revenue, follow up about its period, then ask f
 - `evidence/simulated_chat_audit.jsonl`: explicitly simulated model decisions for three-rejection and snapshot tests. These are separate from real model evidence.
 - `evidence/batch_edge_cases.json`: tag-parent integrity and an isolated new product with no reviews or orders, evaluated using the actual compiled mart SQL.
 - `evidence/answer_and_live.jpg`: actual app screenshot showing active ingestion and a saved approved answer with source and snapshot time.
+- `evidence/live_ingestion.jpg` and `evidence/answer_with_source.jpg`: separate views of the runtime status/counters and the saved answer with source and captured time.
 - `evidence/real_snapshot_isolation.json`, `verification_environment.json`: actual event arrival between questions, verified model hashes and package versions. `verify_submission.py` rechecks the saved real-run evidence without calling a model. `finalize_real_demo.py` explicitly continues a preserved real correction trace after the formatting fix; earlier failed runs remain separate.
 
 Course sources: [ETL repository](https://github.com/paulavrahami/etl-course-demo) at `6788526695bbb20ac40f46a947413fff3545b86a`, [Streaming repository](https://github.com/paulavrahami/streaming-course-demo) at `c27b4fc1b343e5bfca1880ad3c5ae34e97f60b71`.
