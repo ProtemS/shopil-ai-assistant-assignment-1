@@ -31,6 +31,8 @@ def main():
     if (out/'real_model_results.json').exists():
         for r in read('real_model_results.json'):
             rows.append(['real model',r['question'],'evidence-grounded approved answer',r['status']+' attempts='+str(r['attempts']),'real_model_audit.jsonl'])
+    if (out/'batch_edge_cases.json').exists():
+        rows.append(['tag links / empty product','284 source tags; product999 added to isolated DB copy','0 orphan tags; new product retained with 0 count / null average',str(read('batch_edge_cases.json')),'batch_edge_cases.json'])
     with (out/'experiment_matrix.csv').open('w',encoding='utf-8-sig',newline='') as f:
         csv.writer(f).writerows(rows)
     text=(ROOT/'REPORT.md').read_text(encoding='utf-8')
@@ -45,7 +47,7 @@ def main():
     mmd=(ROOT/'architecture.mmd').read_text(encoding='utf-8')
     (ROOT/'ARCHITECTURE.md').write_text('# Implementation architecture\n\n```mermaid\n'+mmd+'\n```\n',encoding='utf-8')
     frozen=subprocess.check_output([sys.executable,'-m','pip','freeze'],text=True)
-    frozen='\n'.join(s for s in frozen.splitlines() if 'shopil-assistant' not in s and not s.startswith('#'))+'\n'
+    frozen='\n'.join(s for s in frozen.splitlines() if 'shopil-assistant' not in s and not s.startswith(('#','-e ')))+'\n'
     (ROOT/'requirements-lock.txt').write_text(frozen,encoding='utf-8')
 
 if __name__=='__main__': main()

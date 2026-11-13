@@ -2,7 +2,7 @@
 import json
 from datetime import timedelta
 import pytest
-from chat import Chat,grounding_check
+from chat import Chat,grounding_check,normalize_draft
 from evidence_store import capture, ROOT
 from streaming_lab import StreamEngine, Event
 from streaming_lab.events import T0
@@ -63,3 +63,4 @@ def test_numeric_guard_rejects_incorrect_model_approval(tmp_path):
     assert grounding_check('מה הרווח הנקי?','לא ניתן לחשב רווח נקי כי חסרים נתוני הוצאות.',package) is None
     assert grounding_check('מה הרווח הנקי?','נתוני הוצאות חסרים. Expenses and costs are unavailable so profit cannot be calculated.',package)
     assert grounding_check('מה טווח התאריכים?','התקופה היא 01-01-2026 עד 27-09-2026.',package) is None
+    assert normalize_draft('😀 התקופה היא 2026-01-01 עד 2026-09-27. Orig: {"batch":{}}')=='התקופה היא 2026-01-01 עד 2026-09-27.'

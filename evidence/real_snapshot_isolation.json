@@ -1,0 +1,10 @@
+{
+  "old_snapshot_id": "466b0dafe26a8f745b08",
+  "new_snapshot_id": "ed01e71737bb731246e6",
+  "old_checkpoint": 13,
+  "new_checkpoint": 14,
+  "old_accepted_orders": 9,
+  "new_accepted_orders": 10,
+  "accepted_revenue_change_cents": 300,
+  "pass": true
+}

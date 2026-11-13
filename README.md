@@ -13,6 +13,7 @@ python -m venv .venv
 $env:PYTHONUTF8='1'
 .\.venv\Scripts\python.exe prepare.py
 .\.venv\Scripts\python.exe experiments.py
+.\.venv\Scripts\python.exe verify_batch_edges.py
 .\.venv\Scripts\python.exe -m pytest tests -q
 ```
 
@@ -57,6 +58,9 @@ Try asking about paid historical revenue, follow up about its period, then ask f
 - `Report.pdf`: visually verified three-page Hebrew explanation; `REPORT.md` is its editable source. `architecture.svg` is the rendered diagram; `ARCHITECTURE.md` also renders it on GitHub.
 - `evidence/manual_verification.md`: two approved answers checked directly against SQL, plus limitations found during model testing.
 - `evidence/simulated_chat_audit.jsonl`: explicitly simulated model decisions for three-rejection and snapshot tests. These are separate from real model evidence.
+- `evidence/batch_edge_cases.json`: tag-parent integrity and an isolated new product with no reviews or orders, evaluated using the actual compiled mart SQL.
+- `evidence/answer_and_live.jpg`: actual app screenshot showing active ingestion and a saved approved answer with source and snapshot time.
+- `evidence/real_snapshot_isolation.json`, `verification_environment.json`: actual event arrival between questions, verified model hashes and package versions. `verify_submission.py` rechecks the saved real-run evidence without calling a model. `finalize_real_demo.py` explicitly continues a preserved real correction trace after the formatting fix; earlier failed runs remain separate.
 
 Course sources: [ETL repository](https://github.com/paulavrahami/etl-course-demo) at `6788526695bbb20ac40f46a947413fff3545b86a`, [Streaming repository](https://github.com/paulavrahami/streaming-course-demo) at `c27b4fc1b343e5bfca1880ad3c5ae34e97f60b71`.
 

@@ -1,12 +1,18 @@
 """Real local or hosted model calls. No mocked decisions in this script."""
 import json
 from datetime import timedelta
+from datetime import datetime,timezone
 from chat import Chat,Model
 from evidence_store import ROOT
 from streaming_lab import StreamEngine,Event
 from streaming_lab.events import T0
 
 def main():
+    # Preserve the shipped verification evidence when the experiment is rerun.
+    stamp=datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+    for name in ('real_model_audit.jsonl','real_model_results.json'):
+        p=ROOT/'evidence'/name
+        if p.exists(): p.rename(p.with_name(p.stem+'.previous-'+stamp+p.suffix))
     model=Model()
     chat=Chat(model,ROOT/'evidence/real_model_audit.jsonl')
     history=[]

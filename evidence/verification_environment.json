@@ -1,0 +1,22 @@
+{
+  "python_verified": "3.11.3",
+  "packages": {
+    "dlt": "1.32.0",
+    "duckdb": "1.4.4",
+    "dbt-core": "1.12.7",
+    "dbt-duckdb": "1.11.1",
+    "gradio": "6.32.0",
+    "pydantic": "2.14.3",
+    "llama-cpp-python": "0.3.36"
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct-GGUF Q4_K_M",
+  "role_configuration": "Two prompt roles, same real local model weights; separate calls; fixed evidence.",
+  "model_sha256_verified": [
+    "dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db",
+    "539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a"
+  ],
+  "accepted_real_questions": 3,
+  "model_correction_attempts": 2,
+  "manual_review": "manual_verification.md",
+  "moodle_submission_performed": false
+}

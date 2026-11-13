@@ -21,6 +21,8 @@ period_end. Batch revenue means PAID orders in ILS. Stream amounts are integer
 cents, with NO payment status. Never add batch and stream revenue. Open windows
 are provisional; emitted windows are final. Null averages are missing, not zero.
 Net profit cannot be calculated: expenses and cost data are absent.
+For missing net profit, use Hebrew wording such as:
+"אין נתוני הוצאות ועלויות, ולכן לא ניתן לחשב רווח נקי."
 Current evidence overrides conversation history. Cite sources, units and periods;
 the app also appends a source note. When feedback is supplied, correct the draft
 using the SAME evidence. Do not repeat incorrect claims from a previous draft.'''
@@ -71,6 +73,13 @@ def grounding_check(question, draft, package):
         if not any(w in body for w in ('חסר','לא ניתן','אין','אינו זמין','לא זמין','לא קיים','לא מופיע','אינם')):
             return 'Net profit is unavailable: expense and cost data are missing. Do not present revenue as profit.'
     return None
+
+def normalize_draft(text):
+    """Remove presentation debris, keeping the raw Actor output in the audit."""
+    text=re.sub(r'[\U0001F000-\U0001FAFF\uFE0F]', '', text).strip()
+    # Some local models append an internal evidence dump after a correct answer.
+    # The application adds explicit citations separately; hide that JSON suffix.
+    return re.split(r'\s+Orig:\s*[\{\[]',text,maxsplit=1)[0].strip()
 
 class Model:
     def __init__(self):
@@ -127,7 +136,7 @@ class Chat:
                          'previous_draft':draft,'feedback':feedback}
                 draft=test_draft if attempt==0 and test_draft is not None else self.model.call(ACTOR,payload)
                 raw_draft=draft
-                draft=re.sub(r'[\U0001F000-\U0001FAFF\uFE0F]', '', draft).strip()
+                draft=normalize_draft(draft)
                 if test_draft is None or attempt>0:
                     summary=package['batch']['summary'][0]
                     sources='marts.fct_orders'
