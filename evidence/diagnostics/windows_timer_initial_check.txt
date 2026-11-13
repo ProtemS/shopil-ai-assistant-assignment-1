@@ -1,0 +1,24 @@
+...........................................F......                       [100%]
+================================== FAILURES ===================================
+_ MicrobatchTests.test_collection_timer_flushes_while_producer_is_still_waiting _
+
+self = <test_course_stream.MicrobatchTests testMethod=test_collection_timer_flushes_while_producer_is_still_waiting>
+
+    async def test_collection_timer_flushes_while_producer_is_still_waiting(self):
+        observed = []
+        result = await run_microbatch(
+            self.engine, self.records[:3], duration_s=None, interval_s=0.04,
+            max_batch_size=5, max_wait_s=0.01,
+            on_snapshot=lambda snapshot: observed.append(snapshot),
+        )
+        self.assertEqual(result["batch_sizes"], [1, 1, 1])
+        self.assertEqual(result["flush_counts"], {"max_size": 0, "max_wait": 3, "final_drain": 0})
+>       self.assertTrue(all(wait >= 0.009 for wait in result["batch_wait_s"]))
+E       AssertionError: False is not true
+
+work\release-check\tests\test_course_stream.py:532: AssertionError
+------------------------------ Captured log call ------------------------------
+WARNING  asyncio:base_events.py:1917 Executing <Task finished name='Task-68' coro=<MicrobatchTests.asyncSetUp() done, defined at C:\Users\rotem\Documents\Codex\2026-11-13\ok\work\release-check\tests\test_course_stream.py:488> result=None created at C:\Users\rotem\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py:100> took 0.109 seconds
+=========================== short test summary info ===========================
+FAILED work\release-check\tests\test_course_stream.py::MicrobatchTests::test_collection_timer_flushes_while_producer_is_still_waiting
+1 failed, 49 passed, 72 subtests passed in 23.10s
